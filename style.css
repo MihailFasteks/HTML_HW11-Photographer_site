@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(84, 85, 86);
+   font-family: sans-serif;
+}
+body{
+   padding-left: 10%;
+   padding-right: 10%;
+}
+.main_div{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    height: 8vh;
+display: flex;
+
+
+}
+.menu ul{
+    display: flex;
+    color: aliceblue;
+    justify-content: end;
+    list-style: none;
+
+    align-items: center;
+    height: 8vh;
+}
+.menu ul li{
+
+margin-right: 10px;
+}
+.logo{
+flex-grow: 2;
+}
+nav{
+    flex-grow: 2;
+}
+h1{
+    text-align: center;
+    color: aliceblue;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.logo div{
+    color: aliceblue;
+}
+.logo{
+display: flex;
+align-items: center;
+}
+.about{
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    line-height: 30px;
+    flex-wrap: wrap;
+}
+.about div, .icons div{
+    margin: 15px;
+}
+.about div:nth-child(2){
+    flex-grow: 2;
+}
+
+.about div:nth-child(3){
+    flex-grow: 1;
+}
+.first_photos>div, .second_photos>div, .third_photos>div, .icons div{
+    border: 10px solid white;
+}
+.big_div{
+    display: flex;
+    flex-direction: column;
+}
+.big_div div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.big_div div div{
+ margin: 15px;
+}
+.first_photos div{
+    width:25vw;
+    height: 35vh;
+}
+.second_photos div{
+    width:25vw;
+    height: 35vh;
+}
+.third_photos div{
+    width:25vw;
+    height: 35vh;
+}
+
+.first_photos div:nth-child(1){
+    background-image: url(img/portfolio/work2.jpg);
+}
+.first_photos div:nth-child(2){
+    background: url(img/portfolio/work6.jpg);
+}
+.first_photos div:last-child{
+    background: url(img/portfolio/work5.jpg);
+}
+.second_photos div:first-child{
+    background: url(img/portfolio/work4.jpg);
+}
+.second_photos div:last-child{
+    background: url(img/portfolio/work3.jpg);
+}
+.third_photos div{
+    background: url(img/portfolio/work1.jpg);
+}
+.first_photos div:nth-child(1) div, .first_photos div:nth-child(2) div, 
+.first_photos div:last-child div, .second_photos div:first-child div, 
+.second_photos div:last-child div, .third_photos div div
+{
+    width: 20vw;
+    height: 30vh;
+    background: none;
+    background-color: aliceblue;
+    opacity: 0;
+  
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.first_photos div:nth-child(1) div:hover, .first_photos div:nth-child(2) div:hover, 
+.first_photos div:last-child div:hover, .second_photos div:first-child div:hover, 
+.second_photos div:last-child div:hover, .third_photos div div:hover{
+    animation: fade .5s linear forwards;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons div{
+    height: 22vh;
+    width: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons div:nth-child(1){
+    background-image: url(img/k-evans.jpg);
+}
+.icons div:nth-child(2){
+    background-image: url(img/m.greenwood.jpg);
+}
+.icons div:nth-child(3){
+    background-image: url(img/r.osborn.jpg);
+}
+.icons div:nth-child(4){
+    background-image: url(img/t.claster.jpg);
+}
+.icons div:nth-child(1) div, .icons div:nth-child(2) div,
+.icons div:nth-child(3) div, .icons div:nth-child(4) div{
+    height: 22vh;
+    width: 12vw;
+    background: none;
+    background-color: aliceblue;
+    opacity: 0;
+margin: -3px;
+}
+.icons div:nth-child(1) div:hover, .icons div:nth-child(2) div:hover,
+.icons div:nth-child(3) div:hover, .icons div:nth-child(4) div:hover{
+    animation: fade .5s linear forwards;
+}
